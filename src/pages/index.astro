@@ -5,10 +5,12 @@ import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
+import IntroSimple from "~/components/intro-simple.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import MRTower from "~/components/mr-tower.astro";
 import MRRythmn from "~/components/mr-rythmn.astro";
+import MRFishing from "~/components/mr-fishing.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -66,12 +68,14 @@ const description =
     <Header />
     <Splash />
     <div class="container mx-auto space-y-24 px-8 py-32">
-      <Intro />
+      <IntroSimple/>
       <MRTower />
       <MRRythmn />
+      <MRFishing />
       <!-- <Features />
       <Compatibility />
       <Showcase /> -->
+      <Intro />
     </div>
     <Footer />
   </body>
